@@ -1,6 +1,6 @@
 //
-//  cocoapods5737Tests.swift
-//  cocoapods5737Tests
+//  cocoapods5864Tests.swift
+//  cocoapods5864Tests
 //
 //  Created by Antoine Cœur on 8/11/16.
 //  Copyright © 2016 coeur. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class cocoapods5737Tests: XCTestCase {
+class cocoapods5864Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

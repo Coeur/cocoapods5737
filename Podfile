@@ -5,14 +5,10 @@ abstract_target 'default_pods' do
     pod 'Alamofire', '~> 3.5'
     
     target 'target-Release'
-    target 'target-Debug'
-    target 'target-Tests'
-end
-
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = '2.3'
+    target 'target-Debug' do
+        target 'target-HostTests' do
+            inherit! :search_paths
         end
     end
+    target 'target-Tests'
 end
