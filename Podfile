@@ -2,7 +2,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 abstract_target 'default_pods' do
-    pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift2.3'
+    pod 'Alamofire', '~> 3.5'
     
     target 'target-Release'
     target 'target-Debug'
